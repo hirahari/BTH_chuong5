@@ -1,0 +1,69 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style cho thanh menu */
+nav {
+    background-color: #4CAF50; /* Màu nền của thanh menu */
+    display: flex; /* Hiển thị các mục menu theo chiều ngang */
+    justify-content: center; /* Căn giữa các mục menu */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Hiển thị các mục menu cùng hàng */
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px; /* Tăng giãn cách giữa các mục */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Loại bỏ giãn cách của mục cuối cùng */
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, sans-serif; /* Thay đổi font chữ */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #45a049; /* Màu nền khi rê chuột qua */
+}
+
+/* Dropdown menu */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4CAF50;
+    border-top: 2px solid #fff; /* Đường viền trên của menu con */
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 100%; /* Điều chỉnh chiều rộng của các mục trong dropdown */
+}
+
+nav ul ul li a {
+    padding: 12px 20px;
+    color: #fff; /* Màu chữ cho menu con */
+    font-family: Arial, sans-serif; /* Thay đổi font chữ */
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+}
